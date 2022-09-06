@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone</title>
+    <!--====================== Icon Link ======================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!--====================== Css Link ======================-->
+    <link rel="stylesheet" href="/Phone/phone-style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="phone-sound"></div>
+            <div class="phone-line" id="defoult">
+                <div class="first-display">
+                    <div class="sets">
+                        <div class="mobile">
+                            <i class="bi bi-battery-half"></i>
+                            <i class="bi bi-reception-4"></i>
+                        </div>
+                        <div class="date-time">
+                            <p>14:44</p>
+                        </div>
+                    </div>
+                    <div class="main-phone">
+                        <div class="main-time">
+                            <h1>14:44</h1>
+                            <h3>Friday, 2 september</h3>
+                        </div>
+                    </div>
+                    <div class="second-display" id="secondScreen">
+                        <div class="password-title">
+                            <p>Password Typing</p>
+                        </div>
+                        <div class="password-display">
+                            <form action="active">
+                                <input type="password" accesskey="0">
+                            </form>
+                        </div>
+                        <div class="password-key">
+                            <ul>
+                                <li id="1">1</li>
+                                <li id="2">2</li>
+                                <li id="3">3</li>
+                            </ul>
+                            <ul>
+                                <li id="4">4</li>
+                                <li id="5">5</li>
+                                <li id="6">6</li>
+                            </ul>
+                            <ul>
+                                <li id="7">7</li>
+                                <li id="8">8</li>
+                                <li id="9">9</li>
+                            </ul>
+                            <ul>                    
+                                <form action="active">
+                                    <li id="success">
+                                        <i class="bi bi-check-lg"></i>
+                                    </li>
+                                </form>
+                                <li id="zero">0</li>
+                                <li id="clear">
+                                    <i class="bi bi-backspace-fill"></i>
+                                    <!-- <img src="/Phone/Image/delete.png" alt=""> -->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="third-display" id="thirdScreen">
+                        <div class="sets bgcolor">
+                            <div class="mobile">                                
+                                <i class="bi bi-reception-4">
+                                    <p>UzMobile</p>
+                                    <p>LTE</p>
+                                </i>
+                            </div>
+                            <div class="date-time">
+                                <p>
+                                    00:00
+                                    <p>50%</p>
+                                </p>
+                                <i class="bi bi-battery-half"></i>
+                            </div>
+                        </div>
+                        <div class="slider">
+                            <div id="size" class="oclock">
+                                <article class="clock">
+                                    <div class="hours-conyainer">
+                                      <div class="hours"></div>
+                                    </div>
+                                    <div class="minutes-container">
+                                      <div class="minutes"></div>
+                                    </div>
+                                    <div class="seconds-container">
+                                      <div class="seconds"></div>
+                                    </div>
+                                  </article>
+                            </div>
+                            <div id="size" class="calander">
+                                <div class="map"></div>
+                            </div>
+                        </div>
+                        <div class="apps">
+                            <ul>
+                                <div class="iosApp" id="calendar">
+                                    <i class="bi bi-calendar-heart"></i>
+                                </div>
+                                <div class="iosApp" id="art">
+                                    <i class="bi bi-flower3"></i>
+                                </div>
+                                <div class="iosApp" id="clock">
+                                    <i class="bi bi-stopwatch-fill"></i>
+                                </div>
+                                <div class="iosApp" id="settings"> 
+                                    <i class="bi bi-gear-wide-connected"></i>
+                                </div>
+                            </ul>
+                            <ul>
+                                <div class="iosApp" id="iMe">
+                                    <i class="bi bi-send-fill"></i>
+                                </div>
+                                <div class="iosApp" id="appStore">
+                                    <i class="bi bi-google-play"></i>
+                                </div>
+                                <div class="iosApp" id="music">
+                                    <i class="bi bi-music-note-beamed"></i>
+                                </div>
+                                <div class="iosApp" id="calculator">
+                                    <i class="bi bi-calculator"></i>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="iosMenu">
+                            <ul>
+                                <div class="mainApp" id="callPhone">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </div>
+                                <div class="mainApp" id="safari">
+                                    <i class="bi bi-browser-safari"></i>
+                                </div>
+                                <div class="mainApp" id="message">
+                                    <i class="bi bi-chat-fill"></i>
+                                </div>
+                                <div class="mainApp" id="camera">
+                                    <i class="bi bi-camera-fill"></i>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="fouthd-display" id="fourthdScreen">
+                        <div class="select">
+                            <div class="sets bgcolor">
+                                <div class="mobile">                                
+                                    <i class="bi bi-reception-4">
+                                        <p>UzMobile</p>
+                                        <p>LTE</p>
+                                    </i>
+                                </div>
+                                <div class="date-time">
+                                    <p>
+                                        00:00
+                                        <p>50%</p>
+                                    </p>
+                                    <i class="bi bi-battery-half"></i>
+                                </div>
+                            </div>
+                            <div class="header-call">
+                                <div class="exit-btn">
+                                    <i class="bi bi-chevron-left"></i>
+                                </div>
+                                <div class="btn-border">
+                                        <button id="btn-1" class="active">All</button>
+                                        <button id="btn-2">Missed</button>
+                                </div>
+                                <div class="call-sort">
+                                    <p id="sort-btn">Edit</p>
+                                </div>
+                            </div>
+                            <div class="call-title">
+                                <h1>Recents</h1>
+                            </div>
+                            <div class="call-schadule">
+                                <div class="user">                                    
+                                    <div class="user-name">
+                                        <i class="bi bi-telephone-inbound-fill"></i>
+                                        <p>Alisher</p>
+                                    </div>
+                                    <div class="call-info">
+                                        <p>21:21</p>
+                                        <i class="bi bi-info-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="user">                                    
+                                    <div class="user-name">
+                                        <i class="bi bi-telephone-inbound-fill"></i>
+                                        <p>Alisher</p>
+                                    </div>
+                                    <div class="call-info">
+                                        <p>21:21</p>
+                                        <i class="bi bi-info-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="user">                                    
+                                    <div class="user-name">
+                                        <i class="bi bi-telephone-inbound-fill"></i>
+                                        <p>Alisher</p>
+                                    </div>
+                                    <div class="call-info">
+                                        <p>21:21</p>
+                                        <i class="bi bi-info-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="user">                                    
+                                    <div class="user-name">
+                                        <i class="bi bi-telephone-inbound-fill"></i>
+                                        <p>Alisher</p>
+                                    </div>
+                                    <div class="call-info">
+                                        <p>21:21</p>
+                                        <i class="bi bi-info-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="user">                                    
+                                    <div class="user-name">
+                                        <i class="bi bi-telephone-inbound-fill"></i>
+                                        <p>Alisher</p>
+                                    </div>
+                                    <div class="call-info">
+                                        <p>21:21</p>
+                                        <i class="bi bi-info-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="user">                                    
+                                    <div class="user-name">
+                                        <i class="bi bi-telephone-inbound-fill"></i>
+                                        <p>Alisher</p>
+                                    </div>
+                                    <div class="call-info">
+                                        <p>21:21</p>
+                                        <i class="bi bi-info-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="user">                                    
+                                    <div class="user-name">
+                                        <i class="bi bi-telephone-inbound-fill"></i>
+                                        <p>Alisher</p>
+                                    </div>
+                                    <div class="call-info">
+                                        <p>21:21</p>
+                                        <i class="bi bi-info-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="user">                                    
+                                    <div class="user-name">
+                                        <i class="bi bi-telephone-inbound-fill"></i>
+                                        <p>Alisher</p>
+                                    </div>
+                                    <div class="call-info">
+                                        <p>21:21</p>
+                                        <i class="bi bi-info-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="user">                                    
+                                    <div class="user-name">
+                                        <i class="bi bi-telephone-inbound-fill"></i>
+                                        <p>Alisher</p>
+                                    </div>
+                                    <div class="call-info">
+                                        <p>21:21</p>
+                                        <i class="bi bi-info-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="user">                                    
+                                    <div class="user-name">
+                                        <i class="bi bi-telephone-inbound-fill"></i>
+                                        <p>Alisher</p>
+                                    </div>
+                                    <div class="call-info">
+                                        <p>21:21</p>
+                                        <i class="bi bi-info-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="user">                                    
+                                    <div class="user-name">
+                                        <i class="bi bi-telephone-inbound-fill"></i>
+                                        <p>Alisher</p>
+                                    </div>
+                                    <div class="call-info">
+                                        <p>21:21</p>
+                                        <i class="bi bi-info-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="user">                                    
+                                    <div class="user-name">
+                                        <i class="bi bi-telephone-inbound-fill"></i>
+                                        <p>Alisher</p>
+                                    </div>
+                                    <div class="call-info">
+                                        <p>21:21</p>
+                                        <i class="bi bi-info-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="user">                                    
+                                    <div class="user-name">
+                                        <i class="bi bi-telephone-inbound-fill"></i>
+                                        <p>Alisher</p>
+                                    </div>
+                                    <div class="call-info">
+                                        <p>21:21</p>
+                                        <i class="bi bi-info-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="user">                                    
+                                    <div class="user-name">
+                                        <i class="bi bi-telephone-inbound-fill"></i>
+                                        <p>Alisher</p>
+                                    </div>
+                                    <div class="call-info">
+                                        <p>21:21</p>
+                                        <i class="bi bi-info-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="user">                                    
+                                    <div class="user-name">
+                                        <i class="bi bi-telephone-inbound-fill"></i>
+                                        <p>Alisher</p>
+                                    </div>
+                                    <div class="call-info">
+                                        <p>21:21</p>
+                                        <i class="bi bi-info-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="user">                                    
+                                    <div class="user-name">
+                                        <i class="bi bi-telephone-inbound-fill"></i>
+                                        <p>Alisher</p>
+                                    </div>
+                                    <div class="call-info">
+                                        <p>21:21</p>
+                                        <i class="bi bi-info-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="user">                                    
+                                    <div class="user-name">
+                                        <i class="bi bi-telephone-inbound-fill"></i>
+                                        <p>Alisher</p>
+                                    </div>
+                                    <div class="call-info">
+                                        <p>21:21</p>
+                                        <i class="bi bi-info-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="user">                                    
+                                    <div class="user-name">
+                                        <i class="bi bi-telephone-inbound-fill"></i>
+                                        <p>Alisher</p>
+                                    </div>
+                                    <div class="call-info">
+                                        <p>21:21</p>
+                                        <i class="bi bi-info-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="user">                                    
+                                    <div class="user-name">
+                                        <i class="bi bi-telephone-inbound-fill"></i>
+                                        <p>Alisher</p>
+                                    </div>
+                                    <div class="call-info">
+                                        <p>21:21</p>
+                                        <i class="bi bi-info-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="choose-call">
+                            <!-- 
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-person-circle"></i>
+                                <i class="bi bi-clock-fill"></i>
+                                <i class="bi bi-grid-3x3-gap-fill"></i>
+                                <i class="bi bi-voicemail"></i>
+                             -->
+
+                             <div class="select">
+                                <i class="bi bi-star-fill"></i>
+                             </div>
+                               
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="phone-btn">
+                <div class="phone-line-btn" id="btn"></div>
+            </div>
+        </div>
+    </header>
+    <script src="/Phone/phone.js"></script>
+</body>
+</html>

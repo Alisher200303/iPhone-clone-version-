@@ -1,0 +1,702 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --body-bg: #45621e58;
+    --active-color: #ffffff00;
+}
+
+body
+{
+    font-family: "Ubuntu", sans-serif;
+    background: var(--body-bg);
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+}
+
+.container
+{
+    width: 350px;
+    height: 600px;
+    border: 2px solid;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+
+}
+.container .phone-line
+{
+    width: 330px;
+    height: 500px;
+    border: 1px solid rgba(97, 85, 85, 0.555);
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+.first-display
+{
+    /* display: none; */
+    background-image: url(/Phone/Image/first.jpg);
+    background-size: cover;
+    width: 330px;
+    height: 500px;
+    transition: .4s ease;
+}
+
+.phone-sound
+{
+    width: 100px;
+    height: 7px;
+    border: 1px solid darkslateblue;
+    border-radius: 20px;
+    position: relative;
+    /* top: -5px; */
+}
+
+.phone-btn
+{
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 50%;
+    position: relative;
+    top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(71, 64, 64);
+}
+
+.phone-line-btn
+{
+    width: 42px;
+    height: 42px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: rgb(34, 26, 26);
+}
+
+.sets
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 2px;
+    background-color: rgba(0, 0, 0, 0.527);
+    color: white;
+}
+
+.sets .date-time p, .sets .mobile
+{
+    font-size: 12px;
+}
+
+.main-phone
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+    color: bisque;
+}
+.main-phone .main-time h1
+{
+    font-size: 45px;
+}
+
+.second-display
+{
+    position: absolute;
+    top: 135px;
+    background-size: cover;
+    width: 330px;
+    height: 500px;
+    transition: .4s ease;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    /* display: none; */
+}
+
+.password-title p
+{
+    margin-top: 100px;
+    font-size: 20px;
+    color: bisque;
+}
+
+
+.password-display ul
+{
+    list-style: none;
+    display: flex;
+}
+.password-display ul li
+{
+    width: 10px;
+    height: 10px;
+    border: 1px solid;
+    border-radius: 50%;
+    margin: 5px 20px;
+    color: #fff;
+}
+
+.password-key
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.password-key ul, #zero
+{
+    display: flex;
+    list-style: none;
+}
+
+.password-key ul li, #zero
+{
+    /* border: 1px solid; */
+    background-color: rgba(134, 131, 131, 0.651);
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff;
+    transition: .3s ease;
+}
+.password-key ul li:hover, #zero:hover
+{
+    background-color: rgba(184, 178, 178, 0.651);
+}
+#clear i
+{
+    font-size: 18px;
+    color: rgba(241, 50, 50, 0.836);
+}
+input
+{
+    outline: none;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    background: none;
+    border: none;
+    line-break: loose;
+
+}
+
+.third-display
+{
+    background-image: url(/Phone/Image/ios-12-stock-wallpaper.png);
+    background-size: cover;
+    position: absolute;
+    top: 135px;
+    width: 330px;
+    height: 500px;
+    transition: .4s ease;
+    text-align: center;
+    background-color: rgb(126, 126, 68);
+    display: none;
+}
+
+.third-display .bgcolor
+{
+    background-color: rgba(202, 149, 149, 0);
+}
+.slider
+{
+    display: flex;
+    justify-content: space-around;
+}
+.slider #size
+{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+
+.oclock
+{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calander
+{
+    /* background-image: url(/Phone/Image/calendar.jpg); */
+    background-size: cover;
+}
+
+.iosApp
+{
+    width: 50px;
+    height: 50px;
+    background-color: lightseagreen;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.iosApp:hover
+{
+    transform: scale(1.05);
+}
+
+.apps ul
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px;
+}
+
+.iosMenu
+{
+    width: 100%;
+    background-color: rgba(63, 62, 62, 0.822);
+    padding: 15px 0px;
+    backdrop-filter: blur(10px);
+    margin-top: 100px;
+}
+.iosMenu ul
+{
+    display: flex;
+    justify-content: center;    
+}
+.iosMenu ul .mainApp
+{
+    width: 60px;
+    height: 60px;
+    background-color: lightgreen;
+    margin: 0px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.mobile
+{
+    display: flex;
+}
+.mobile i
+{
+    display: flex;
+    margin: 0px 3px;
+}
+.mobile i p
+{
+    font-family: "Ubuntu", sans-serif;
+    margin: 0px 3px;
+}
+
+.date-time 
+{
+    display: flex;
+    align-items: center;
+}
+.date-time i
+{
+    /* margin: 0px 3px; */
+    font-size: 16px;
+}
+.date-time p
+{
+    margin: 0px 2px;
+}
+
+.iosApp
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iosApp i
+{
+    font-size: 35px;
+}
+
+.mainApp
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainApp i
+{
+    font-size: 35px;
+}
+
+#calendar
+{
+    background: #fff;
+}
+#calendar i
+{
+    color: rgb(228, 72, 72);
+}
+#art
+{
+    background: linear-gradient(to top, rgb(75, 182, 218), lightgreen, rgb(201, 37, 37));
+}
+#art i
+{
+    color: rgba(0, 0, 0, 0.842);
+}
+
+#clock
+{
+    background: #000;
+}
+#clock i
+{
+    color: #fff;
+    font-size: 40px;
+}
+
+#settings
+{
+    background: rgb(70, 68, 68);
+}
+#settings i
+{
+    color: lightgray;
+    font-size: 40px;
+}
+
+#iMe
+{
+    background-color: rgb(216, 68, 97);
+}
+#iMe i
+{
+    color: #fff;
+    transform: perspective(1000px);
+    transform: rotate(-45deg);
+    margin-top: 10px;
+}
+
+#appStore
+{
+    background: linear-gradient(to top, rgba(0, 0, 139, 0.788), rgb(169, 194, 240));
+}
+#appStore i
+{
+    color: #fff;
+}
+
+#music
+{
+    background: rgb(216, 68, 97);
+}
+#music i
+{
+    color: #fff;
+}
+
+#calculator
+{
+    background: lightgray;
+}
+#calculator i
+{
+    color: rgb(128, 94, 81);
+}
+
+#callPhone
+{
+    background: rgb(85, 236, 85);
+    color: #fff;
+}
+
+#safari
+{
+    background: #fff;
+    color: rgb(40, 85, 233);
+}
+
+#safari i
+{
+    font-size: 45px;
+}
+
+#message
+{
+    color: #fff;
+    background: rgb(85, 236, 85);
+}
+
+#camera
+{
+    background: lightgray;
+}
+
+#camera i
+{
+    font-size: 40px;
+}
+
+
+.clock
+{
+  border-radius: 50%;
+  border: 1px solid;
+  background: #fff url(/1200px-Ios_clock.svg.png) no-repeat center;
+  background-size: 90%;
+  width: 9em;
+  height: 9em;
+  padding: 10px;
+  position: relative;
+}
+
+.clock::after
+{
+  background: #000;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 5%;
+  height: 5%;
+  z-index: 10;
+}
+
+.minutes-container, .hours-container, .seconds-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hours {
+  background: #000;
+  height: 20%;
+  left: 48.75%;
+  position: absolute;
+  top: 30%;
+  transform-origin: 50% 50%;
+  width: 2.5%;
+}
+.minutes {
+  background: #000;
+  height: 40%;
+  left: 49%;
+  position: absolute;
+  top: 10%;
+  transform-origin: 50% 100%;
+  width: 2%;
+}
+.seconds {
+  background: rgb(230, 37, 37);
+  height: 45%;
+  left: 49.5%;
+  position: absolute;
+  top: 14%;
+  transform-origin: 50% 80%;
+  width: 1%;
+  z-index: 8;
+}
+.hours-container {
+  animation: rotate 43200s infinite linear;
+}
+.minutes-container {
+  animation: rotate 3600s infinite linear;
+}
+.seconds-container {
+  animation: rotate 60s infinite linear;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.minutes-container {
+  transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44);
+}
+.seconds-container {
+  transition: transform 0.2s cubic-bezier(.4,2.08,.55,.44);
+}
+
+
+
+
+.fouthd-display
+{
+    position: absolute;
+    top: 135px;
+    background: rgb(0, 0, 0);
+    width: 330px;
+    height: 505px;
+    transition: .4s ease;
+    z-index: 99;
+    /* display: none; */
+}
+
+.select
+{
+    width: 100%;
+    height: 460px;
+}
+
+.header-call
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-border
+{
+    display: flex;
+    margin: 3px;
+    background: rgba(59, 58, 58, 0.856);
+    border-radius: 8px;
+    position: relative;
+}
+
+.call-sort
+{
+    position: relative;
+    margin: 3px 8px;
+}
+.call-sort p
+{
+    color: rgba(51, 51, 226, 0.808);
+    font-weight: 500;
+    cursor: pointer;
+}
+.exit-btn i
+{
+    color: rgba(92, 92, 221, 0.808);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-border button
+{
+    border: 0;
+    width: 60px;
+    padding: 5px 0px;
+    background: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn-border .active
+{
+    border: 0;
+    border-radius: 8px;
+    padding: 5px 0px;
+    background: rgb(148, 146, 146);
+    cursor: pointer;
+    color: #fff;
+}
+
+.call-title
+{
+    padding: 15px 20px;
+}
+.call-title h1
+{
+    color: #fff;
+}
+
+.call-schadule
+{
+    width: 100%;
+    height: 380px;
+    overflow-y: scroll;
+}
+
+.user
+{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid gray;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 15px 0px;
+}
+
+.user-name, .call-info
+{
+    display: flex;
+    justify-content: center;
+}
+.user-name p
+{
+    margin: 0px 5px;
+    font-size: 18px;
+}
+.call-info p, .user-name i
+{
+    color: rgb(148, 146, 146);
+}
+.call-info i
+{
+    color: rgb(73, 73, 233);
+    margin: 0px 3px;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey;  */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(148, 146, 146); 
+    border-radius: 10px;
+}
+.choose-call
+{
+    width: 100%;
+    height: 50px;
+    margin-top: -8px;
+    padding: 5px;
+    background-color: rgba(65, 63, 63, 0.753);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Call Select active color */
+.active-color
+{
+    color: blue;
+    display: block;
+}
