@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!--====================== Css Link ======================-->
-    <link rel="stylesheet" href="/Phone/phone-style.css">
+    <link rel="stylesheet" href="phone-style.css">
 </head>
 <body>
     
@@ -30,7 +30,7 @@
                     </div>
                     <div class="main-phone">
                         <div class="main-time">
-                            <h1>14:44</h1>
+                            <h1 class="mainTime">14:44</h1>
                             <h3>Friday, 2 september</h3>
                         </div>
                     </div>
@@ -44,29 +44,29 @@
                             </form>
                         </div>
                         <div class="password-key">
-                            <ul>
-                                <li id="1">1</li>
-                                <li id="2">2</li>
-                                <li id="3">3</li>
+                            <ul class="first-dp">
+                                <li class = "btn-anime" id="1">1</li>
+                                <li class = "btn-anime" id="2">2</li>
+                                <li class = "btn-anime" id="3">3</li>
                             </ul>
-                            <ul>
-                                <li id="4">4</li>
-                                <li id="5">5</li>
-                                <li id="6">6</li>
+                            <ul class="second-dp">
+                                <li class = "btn-anime" id="4">4</li>
+                                <li class = "btn-anime" id="5">5</li>
+                                <li class = "btn-anime" id="6">6</li>
                             </ul>
-                            <ul>
-                                <li id="7">7</li>
-                                <li id="8">8</li>
-                                <li id="9">9</li>
+                            <ul class="third-dp">
+                                <li class = "btn-anime" id="7">7</li>
+                                <li class = "btn-anime" id="8">8</li>
+                                <li class = "btn-anime" id="9">9</li>
                             </ul>
                             <ul>                    
                                 <form action="active">
-                                    <li id="success">
+                                    <li class = "btn-anime" id="success">
                                         <i class="bi bi-check-lg"></i>
                                     </li>
                                 </form>
-                                <li id="zero">0</li>
-                                <li id="clear">
+                                <li class = "btn-anime" id="zero">0</li>
+                                <li class = "btn-anime" id="clear">
                                     <i class="bi bi-backspace-fill"></i>
                                     <!-- <img src="/Phone/Image/delete.png" alt=""> -->
                                 </li>
@@ -401,6 +401,11 @@
             </div>
         </div>
     </header>
-    <script src="/Phone/phone.js"></script>
+    <script src="phone.js"></script>
+    <script src="clock.js"></script>
+    <script src="gsap.js"></script>
+    <script src="password.js"></script>
+    <!-- Gsap Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
 </body>
 </html>
