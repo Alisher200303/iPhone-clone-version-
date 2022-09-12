@@ -172,7 +172,7 @@
                                 </div>
                             </div>
                             <div class="header-call">
-                                <div class="exit-btn">
+                                <div class="exit-btn" id="exit">
                                     <i class="bi bi-chevron-left"></i>
                                 </div>
                                 <div class="btn-border">
@@ -388,8 +388,30 @@
                                 <i class="bi bi-voicemail"></i>
                              -->
 
-                             <div class="select">
-                                <i class="bi bi-star-fill"></i>
+                             <div class="choosen">
+                                <i class="bi bi-star-fill star">
+                                    <span>Fovourites</span>
+                                </i>
+                             </div>
+                             <div class="choosen">
+                                <i class="bi bi-clock-fill time" id="active-color">
+                                    <span>Recents</span>
+                                </i>
+                             </div>
+                             <div class="choosen">
+                                <i class="bi bi-person-circle contact">
+                                    <span>Contacts</span>
+                                </i>
+                             </div>
+                             <div class="choosen">
+                                <i class="bi bi-grid-3x3-gap-fill keypad">
+                                    <span>Keypad</span>
+                                </i>
+                             </div>
+                             <div class="choosen">
+                                <i class="bi bi-voicemail voice">
+                                    <span>Voicemail</span>
+                                </i>
                              </div>
                                
                         </div>
@@ -401,10 +423,11 @@
             </div>
         </div>
     </header>
-    <script src="phone.js"></script>
+    <script src="main.js"></script>
     <script src="clock.js"></script>
     <script src="gsap.js"></script>
     <script src="password.js"></script>
+    <script src="callInto.js"></script>
     <!-- Gsap Link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
 </body>

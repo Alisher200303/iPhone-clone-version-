@@ -47,7 +47,7 @@ body
 
 .first-display
 {
-    display: none;
+    /* display: none; */
     background-image: url(Image/first.jpg);
     background-size: cover;
     width: 300px;
@@ -118,6 +118,7 @@ body
 
 .second-display
 {
+    /* display: none; */
     position: absolute;
     top: 135px;
     background-size: cover;
@@ -130,7 +131,6 @@ body
     align-items: center;
     backdrop-filter: blur(10px);
     text-align: center;
-    display: none;
 }
 
 
@@ -215,7 +215,7 @@ input
 
 .third-display
 {
-    display: none;
+    /* display: none; */
     background-image: url(Image/ios-12-stock-wallpaper.png);
     background-size: cover;
     position: absolute;
@@ -555,7 +555,7 @@ input
 
 .fouthd-display
 {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 135px;
     background: rgb(0, 0, 0);
@@ -595,13 +595,13 @@ input
 }
 .call-sort p
 {
-    color: rgba(51, 51, 226, 0.808);
+    color: rgba(67, 110, 204, 0.973);
     font-weight: 500;
     cursor: pointer;
 }
 .exit-btn i
 {
-    color: rgba(92, 92, 221, 0.808);
+    color: rgba(67, 110, 204, 0.973);
     font-size: 20px;
     cursor: pointer;
 }
@@ -641,40 +641,6 @@ input
     height: 380px;
     overflow-y: scroll;
 }
-
-.user
-{
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid gray;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    padding: 15px 0px;
-}
-
-.user-name, .call-info
-{
-    display: flex;
-    justify-content: center;
-}
-.user-name p
-{
-    margin: 0px 5px;
-    font-size: 18px;
-}
-.call-info p, .user-name i
-{
-    color: rgb(148, 146, 146);
-}
-.call-info i
-{
-    color: rgb(73, 73, 233);
-    margin: 0px 3px;
-}
-
 ::-webkit-scrollbar {
     width: 3px;
 }
@@ -687,10 +653,55 @@ input
     background: rgb(148, 146, 146); 
     border-radius: 10px;
 }
+
+.user
+{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid gray;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 15px 0px;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.user:hover
+{
+    background-color: rgba(68, 65, 65, 0.692);
+}
+
+.user-name, .call-info
+{
+    display: flex;
+    justify-content: center;
+}
+.user-name p
+{
+    margin: 0px 5px;
+    font-size: 18px;
+}
+.user .user-name i
+{
+    margin-left: 5px;
+}
+.call-info p, .user-name i
+{
+    color: rgb(148, 146, 146);
+}
+.call-info i
+{
+    color: rgba(67, 110, 204, 0.973);
+    margin: 0px 3px;
+}
+
 .choose-call
 {
     width: 100%;
-    height: 50px;
+    height: 55px;
     margin-top: -8px;
     padding: 5px;
     background-color: rgba(65, 63, 63, 0.753);
@@ -703,7 +714,28 @@ input
 
 
 /* Call Select active color */
-.active-color
+#active-color
 {
-    color: blue;
+    color: rgba(67, 110, 204, 0.973);
 }
+
+
+
+.choosen
+{
+    cursor: pointer;
+}
+.choosen i
+{
+    color: rgb(114, 109, 109);
+    display: grid;
+    text-align: center;
+    font-size: 30px;
+}
+
+.choosen span
+{
+    font-size: 12px;
+    margin: 3px 0px;
+}
+

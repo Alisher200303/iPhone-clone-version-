@@ -7,7 +7,8 @@ const btn = document.querySelectorAll("div"),
       secondScreen = document.querySelector("#secondScreen"),
       thirdScreen = document.querySelector("#thirdScreen"),
       fourthdScreen = document.querySelector("#fourthdScreen"),
-      callPhone = document.querySelector("#callPhone");
+      callPhone = document.querySelector("#callPhone"),
+      exitBtn = document.querySelector(".exit-btn");
     
 
 btn.forEach(item => {
@@ -21,7 +22,9 @@ btn.forEach(item => {
 
         } else if (item.id == "callPhone") {
             fourthdScreen.style.display = "block";
-        };
+        } else if (item.id == "exit") {
+            fourthdScreen.style.display = "none";
+        }
     });
 });
 
