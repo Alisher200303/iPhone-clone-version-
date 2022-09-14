@@ -155,7 +155,7 @@
                         </div>
                     </div>
                     <div class="fouthd-display" id="fourthdScreen">
-                        <div class="select">
+                        <div id="star-display" class="select">
                             <div class="sets bgcolor">
                                 <div class="mobile">                                
                                     <i class="bi bi-reception-4">
@@ -181,6 +181,7 @@
                                 </div>
                                 <div class="call-sort">
                                     <p id="sort-btn">Edit</p>
+                                    <p id="ready-btn">Ready</p>
                                 </div>
                             </div>
                             <div class="call-title">
@@ -379,6 +380,136 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="select" id="time-display">
+                            <div class="sets bgcolor">
+                                <div class="mobile">                                
+                                    <i class="bi bi-reception-4">
+                                        <p>UzMobile</p>
+                                        <p>LTE</p>
+                                    </i>
+                                </div>
+                                <div class="date-time">
+                                    <p>
+                                        00:00
+                                        <p>50%</p>
+                                    </p>
+                                    <i class="bi bi-battery-half"></i>
+                                </div>
+                            </div>
+                            <div class="favourite-display">
+                                <div class="top-section">
+                                    <div class="add-icon">
+                                        <i class="bi bi-plus-lg"></i>
+                                    </div>
+                                    <div class="top-title">
+                                        <h2>Saved</h2>
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div class="center-section">
+                                    <h2>Not Saved</h2>
+                                </div>
+                                <div class="bottom-swipe">
+                                    <div class="top-back">
+                                        <div class="swipe-top">
+                                            <div class="back-icon">
+                                                <i class="bi bi-x-circle-fill"></i>
+                                            </div>
+                                            <div class="swipe-title">
+                                                <h2>Contact</h2>
+                                            </div>
+                                            <div class="swipe-top-btn">
+                                                <p>Ready</p>
+                                            </div>
+                                        </div>
+                                        <div class="swipe-search">
+                                            <input type="search" placeholder="Search" id="search">
+                                        </div>
+                                    </div>
+                                    <div class="swipe-schedule">
+                                        <div class="contacts">
+                                            <div class="contact-top"></div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                            <div class="user-name-search">
+                                                <p>Jane Rose</p>
+                                            </div>
+                                        </div>
+                                        <div class="contacts-letter"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
                         <div class="choose-call">
                             <!-- 
                                 <i class="bi bi-star-fill"></i>
@@ -412,8 +543,7 @@
                                 <i class="bi bi-voicemail voice">
                                     <span>Voicemail</span>
                                 </i>
-                             </div>
-                               
+                             </div>                               
                         </div>
                     </div>
                 </div>
@@ -428,6 +558,7 @@
     <script src="gsap.js"></script>
     <script src="password.js"></script>
     <script src="callInto.js"></script>
+    <script src="favourite-section.js"></script>
     <!-- Gsap Link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
 </body>

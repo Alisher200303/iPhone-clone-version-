@@ -10,7 +10,7 @@ const btn = document.querySelectorAll("div"),
     callPhone = document.querySelector("#callPhone"),
     exitBtn = document.querySelector(".exit-btn"),
     hiddenIcon = document.querySelectorAll(".bi-info-circle"),
-    editBtn = document.querySelector("#sort-btn"),
+    btnP = document.querySelectorAll("p"),
     changeDate = document.querySelectorAll(".date-change");
 
 
@@ -30,47 +30,55 @@ btn.forEach(item => {
         }
     });
 });
+
 const iconRemove = document.querySelectorAll("#iconChange");
+const editBtn = document.querySelector("#sort-btn"),
+      readyBtn = document.querySelector("#ready-btn");
 
-
-editBtn.addEventListener("click", () => {
-    if (editBtn.innerHTML = "Edit") {
-        editBtn.innerHTML = "Tink";
-        changeDate.forEach(item => {
-            gsap.to(item, {
-                x: 20,
-                duration: 0.4,
-            });
-        });
-        hiddenIcon.forEach(hide => {
-            gsap.to(hide, {
-                scale: 0,
-            });
-        });
-    }
-    editBtn.addEventListener("click", () => {
-        if (editBtn.innerHTML = "Tink") {
-            editBtn.innerHTML = "Edit";
+btnP.forEach(paragraph => {
+    paragraph.addEventListener("click", () => {
+        if (paragraph.id == "sort-btn") {
+            editBtn.style.display = "none";
+            readyBtn.style.display = "block";
             changeDate.forEach(item => {
-                gsap.to(item, {
-                    x: 0,
-                    duration: 0.4,
+                gsap.to (item, {
+                    x: 20,
+                    duration: .4,
                 });
             });
             hiddenIcon.forEach(hide => {
-                gsap.to(hide, {
-                    scale: 1,
+                gsap.to (hide, {
+                    scale: 0,
+                    duration: .4,
                 });
-            }); 
+            });
+            iconRemove.forEach(change => {
+                change.classList.remove("bi-telephone-inbound-fill")
+                change.classList.add("bi-dash-circle-fill");
+                change.style.color = "red";
+            });
+        } else if (paragraph.id == "ready-btn") {
+            editBtn.style.display = "block";
+            readyBtn.style.display = "none";
+            changeDate.forEach(item => {
+                gsap.to (item, {
+                    x: 0,
+                    duration: .4,
+                });
+            });
+            hiddenIcon.forEach(hide => {
+                gsap.to (hide, {
+                    scale: 1,
+                    duration: .4,
+                });
+            });
+                iconRemove.forEach(change => {
+                    change.classList.add("bi-telephone-inbound-fill")
+                    change.classList.remove("bi-dash-circle-fill");
+                    change.style.color = "";
+                });
         }
     });
 });
 
 
-
-// <i class="bi bi-dash-circle-fill"></i>
-
-// iconRemove.forEach(change => {
-//     change.classList.remove("bi-telephon-inbound-fill");
-//     change.classList.add("bi-dash-circle-fill");
-// });

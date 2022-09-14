@@ -8,7 +8,13 @@ const firstIcon = document.querySelector(".star"),
       secondIcon = document.querySelector(".time"),
       thirdIcon = document.querySelector(".contact"),
       fourhdIcon = document.querySelector(".keypad"),
-      fifthIcon = document.querySelector(".voice");
+      fifthIcon = document.querySelector(".voice"),
+
+
+      firstDP = document.querySelector(".star-display"),
+      secondDP = document.querySelector(".time-display");
+      
+    //   fourthdScreen = document.querySelector("#fourthdScreen");
 
 
 // .active-color ===> active CLASS
@@ -19,15 +25,14 @@ firstIcon.addEventListener("click", () => {
     thirdIcon.setAttribute("id", "");
     fourhdIcon.setAttribute("id", "");
     fifthIcon.setAttribute("id", "");
+
+    firstDP.style.display = "block";
+    secondDP.style.display = "none";
+    
+
 })
 
-firstIcon.addEventListener("click", () => {
-    firstIcon.setAttribute("id", "active-color");
-    secondIcon.setAttribute("id", "");
-    thirdIcon.setAttribute("id", "");
-    fourhdIcon.setAttribute("id", "");
-    fifthIcon.setAttribute("id", "");
-})
+
 
 secondIcon.addEventListener("click", () => {
     secondIcon.setAttribute("id", "active-color");
